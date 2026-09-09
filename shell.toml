@@ -1,0 +1,37 @@
+# Carbon Black shell accents.
+# Only semantic color states are overridden so user sizing, spacing, and
+# typography preferences remain under ~/.config/omarchy/shell.toml.
+
+[bar]
+active = "#61D6FF"
+
+[controls]
+selected-color = "#61D6FF"
+selected-fill-alpha = 0.18
+selected-border = "#61D6FF"
+selected-border-width = 1
+selected-border-alpha = 1.0
+
+[notifications]
+countdown = "#61D6FF"
+
+[launcher]
+selected-border = "#61D6FF"
+selected-border-alpha = 1.0
+selected-border-width = 1
+
+[menu]
+selected-border = "#61D6FF"
+selected-border-alpha = 1.0
+selected-border-width = 1
+
+[polkit]
+accent = "#61D6FF"
+
+[lock]
+border-active = "#61D6FF"
+selection = "#61D6FF"
+
+[image-picker]
+selected-border = "#61D6FF"
+selected-border-alpha = 1.0

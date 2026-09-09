@@ -30,6 +30,13 @@ omarchy theme install https://github.com/willspiering/omarchy-carbon-black-theme
 Full palette in [colors.toml](colors.toml). Icons are `Yaru-blue`.
 Omarchy generates application colors from the palette using its built-in templates.
 
+## Shell accents
+
+The included [shell.toml](shell.toml) carries cyan into active and selected
+shell states, including toggles, plugin controls, menus, notifications, and
+the image picker. User overrides in `~/.config/omarchy/shell.toml` still take
+precedence, and the theme does not set shell sizing, spacing, or typography.
+
 ## Wallpapers
 
 Eight wallpapers are included in [backgrounds/](backgrounds/): four carbon-black designs and four smoke variants, all at 1672 × 941.
