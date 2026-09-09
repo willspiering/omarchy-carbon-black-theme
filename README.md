@@ -1,6 +1,8 @@
 # Omarchy Carbon Black Theme
 
-A carbon-black theme for [Omarchy](https://omarchy.org/) with soft gray text, charcoal surfaces, and cool cyan accents.
+A carbon-black theme for [Omarchy](https://omarchy.org/), inspired by the incredible Aston Martin Vanquish Carbon Black edition and DHH's [Zonda Zoom](https://github.com/dhh/omarchy-zonda-zoom-theme) Omarchy theme. Soft gray text, charcoal surfaces, and cool cyan accents.
+
+This is the car the devil himself would drive. If he's not in the Batmobile, Bruce Wayne is in this — darkness and vengeance on four wheels, with menace sculpted into every line.
 
 ![Carbon Black wallpaper](backgrounds/carbon-black-wallpapers-3.png)
 
@@ -9,10 +11,8 @@ A carbon-black theme for [Omarchy](https://omarchy.org/) with soft gray text, ch
 Requires Omarchy v4 with `colors.toml` theme support and the `Yaru-blue` icon theme.
 
 ```sh
-omarchy theme install https://github.com/YOUR_USERNAME/omarchy-carbon-black-theme
+omarchy theme install https://github.com/willspiering/omarchy-carbon-black-theme
 ```
-
-Replace `YOUR_USERNAME` with the repository owner's GitHub username.
 
 ## Palette
 
