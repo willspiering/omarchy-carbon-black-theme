@@ -5,7 +5,7 @@ accent = "#61D6FF"
 selection = "#212223"
 muted = "#606468"
 
-background = "#08090A"
+background = "#000000"
 dark_background = "#060708"
 darker_background = "#040505"
 lighter_background = "#212223"
