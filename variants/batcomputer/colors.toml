@@ -1,0 +1,37 @@
+# Carbon Black: Batcomputer
+# The application palette is identical to Carbon Black. Only the window
+# borders gain a directional HUD treatment using colors already in the palette.
+mode = "dark"
+
+accent = "#61D6FF"
+selection = "#212223"
+muted = "#606468"
+
+background = "#000000"
+dark_background = "#060708"
+darker_background = "#040505"
+lighter_background = "#212223"
+
+foreground = "#D5D5D0"
+dark_foreground = "#a0a09c"
+light_foreground = "#dbdbd7"
+bright_foreground = "#e0e0dc"
+
+red = "#E46E6E"
+yellow = "#E2C275"
+orange = "#e88484"
+green = "#86D993"
+cyan = "#61D6FF"
+blue = "#74A8C7"
+magenta = "#B7A1C7"
+brown = "#8b4f4f"
+
+bright_red = "#F08A8A"
+bright_yellow = "#ECD69A"
+bright_green = "#A5E4AE"
+bright_cyan = "#8DE4FF"
+bright_blue = "#94BCD2"
+bright_magenta = "#CEBDDA"
+
+hyprland_active_border = "rgba(61d6ffff) rgba(212223cc) rgba(060708ee) rgba(61d6ffff) 135deg"
+hyprland_inactive_border = "rgba(60646888) rgba(060708aa) rgba(60646855) 135deg"

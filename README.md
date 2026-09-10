@@ -37,6 +37,85 @@ shell states, including toggles, plugin controls, menus, notifications, and
 the image picker. User overrides in `~/.config/omarchy/shell.toml` still take
 precedence, and the theme does not set shell sizing, spacing, or typography.
 
+## Batcomputer variant
+
+The optional **Carbon Black: Batcomputer** variant keeps the Vanquish, icons,
+and entire Carbon Black palette intact, then gives the surrounding shell a
+more purposeful [FUI/HUD treatment](https://trends.daisyui.com/trend/fui-hud/):
+
+- the wallpaper remains a calm central viewport instead of being buried under
+  sci-fi decoration;
+- compact type, tighter spacing, and near-black surfaces increase useful
+  information density;
+- directional cyan-to-graphite borders suggest telemetry brackets around
+  launchers, panels, notifications, and selected controls; and
+- cyan identifies active information while red remains reserved for real
+  errors and urgent states.
+
+It is deliberately closer to Bruce Wayne's instrument panel than a neon
+cyberpunk dashboard: technical, immediate, and elegant.
+
+Install the main theme first, then run the included variant installer from the
+installed theme:
+
+```sh
+~/.config/omarchy/themes/carbon-black/install-batcomputer.sh --apply
+```
+
+From a development checkout, run `./install-batcomputer.sh --apply` instead.
+The script creates a separate `carbon-black-batcomputer` theme; it does not
+alter Carbon Black. Re-run it with `--force` to update an existing copy. The
+old copy is preserved in a timestamped backup.
+
+Switch between the two at any time:
+
+```sh
+omarchy theme set carbon-black
+omarchy theme set carbon-black-batcomputer
+```
+
+### Optional sharp window treatment
+
+Omarchy intentionally does not allow a Git-installed theme to supply
+executable Hyprland Lua. Window shape and spacing are also personal,
+machine-level choices. For the complete squared-off cockpit treatment, merge
+the following into `~/.config/hypr/looknfeel.lua`:
+
+```lua
+hl.config({
+  general = {
+    border_size = 2,
+    gaps_in = 5,
+    gaps_out = 10,
+  },
+  decoration = {
+    rounding = 0,
+    shadow = {
+      enabled = false,
+    },
+    blur = {
+      enabled = true,
+      size = 4,
+      passes = 2,
+      noise = 0.04,
+    },
+  },
+})
+```
+
+Apply and validate the window settings, then restart the shell so its panels
+pick up the square corner radius:
+
+```sh
+hyprctl reload
+hyprctl configerrors
+omarchy restart shell
+```
+
+The portable variant uses supported gradients and asymmetric border widths to
+create its edge language. Actual clipped diagonal panel geometry would require
+a custom QML shell fork and is intentionally not required.
+
 ## Wallpapers
 
 Eight wallpapers are included in [backgrounds/](backgrounds/): four carbon-black designs and four smoke variants, all at 1672 × 941.
