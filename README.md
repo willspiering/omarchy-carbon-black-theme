@@ -6,6 +6,20 @@ This is the car the devil himself would drive. If he's not in the Batmobile, Bru
 
 ![Omarchy Carbon Black desktop with the display panel open](preview.webp)
 
+## Animated concept
+
+![Animated Carbon Black headlight reveal concept](preview-animation.webp)
+
+This looping concept starts near black, brings the headlights up through the
+fog, reveals the lighter standard scene, and then recedes into darkness. It is
+a visual prototype only; installing the theme still uses static wallpapers.
+
+Regenerate the preview with FFmpeg:
+
+```sh
+./scripts/render-animated-preview.sh
+```
+
 ## Install
 
 Requires Omarchy v4 with `colors.toml` theme support and the `Yaru-blue` icon theme.

@@ -57,16 +57,16 @@ ffmpeg -hide_banner -loglevel warning -y \
       if(lt(T,3.2),1,if(lt(T,4.8),(1+cos(PI*(T-3.2)/1.6))/2,0)))))'
       [headlight_stage];
     [headlight_stage][smoke]blend=all_expr='
-      A*(1-(if(lt(T,3.2),0,if(lt(T,5.2),(1-cos(PI*(T-3.2)/2))/2,
+      A*(1-(if(lt(T,3.4),0,if(lt(T,5.2),(1-cos(PI*(T-3.4)/1.8))/2,
       if(lt(T,11.2),1,if(lt(T,13.2),(1+cos(PI*(T-11.2)/2))/2,0))))))+
-      B*(if(lt(T,3.2),0,if(lt(T,5.2),(1-cos(PI*(T-3.2)/2))/2,
+      B*(if(lt(T,3.4),0,if(lt(T,5.2),(1-cos(PI*(T-3.4)/1.8))/2,
       if(lt(T,11.2),1,if(lt(T,13.2),(1+cos(PI*(T-11.2)/2))/2,0)))))'
       [fog_stage];
     [fog_stage][light]blend=all_expr='
-      A*(1-(if(lt(T,5),0,if(lt(T,7.4),(1-cos(PI*(T-5)/2.4))/2,
-      if(lt(T,8.8),1,if(lt(T,11.2),(1+cos(PI*(T-8.8)/2.4))/2,0))))))+
-      B*(if(lt(T,5),0,if(lt(T,7.4),(1-cos(PI*(T-5)/2.4))/2,
-      if(lt(T,8.8),1,if(lt(T,11.2),(1+cos(PI*(T-8.8)/2.4))/2,0)))))',
+      A*(1-(if(lt(T,6.2),0,if(lt(T,7.8),(1-cos(PI*(T-6.2)/1.6))/2,
+      if(lt(T,8.8),1,if(lt(T,10.4),(1+cos(PI*(T-8.8)/1.6))/2,0))))))+
+      B*(if(lt(T,6.2),0,if(lt(T,7.8),(1-cos(PI*(T-6.2)/1.6))/2,
+      if(lt(T,8.8),1,if(lt(T,10.4),(1+cos(PI*(T-8.8)/1.6))/2,0)))))',
       format=yuv420p[out]
   " \
   -map "[out]" \
