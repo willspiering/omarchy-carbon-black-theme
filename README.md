@@ -4,7 +4,7 @@ A carbon-black theme for [Omarchy](https://omarchy.org/), inspired by the incred
 
 This is the car the devil himself would drive. If he's not in the Batmobile, Bruce Wayne is in this — darkness and vengeance on four wheels, with menace sculpted into every line.
 
-![Carbon Black wallpaper](backgrounds/carbon-black-wallpapers-3.png)
+![Omarchy Carbon Black desktop with the display panel open](preview.webp)
 
 ## Install
 
